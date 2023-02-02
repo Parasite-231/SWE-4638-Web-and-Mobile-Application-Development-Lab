@@ -1,0 +1,149 @@
+h1.first-header {
+  color: white;
+  background-color: red;
+  padding: 5px;
+}
+
+h1.large-heading {
+  color: aqua;
+  background-color: brown;
+}
+
+div.first-div p [data-sizing="intrinsic"] {
+  font-size: xx-large;
+  width: 100px;
+  height: 50px;
+  padding: 20px;
+  border: 1px solid;
+}
+
+/* div.images [data-sizing="intrinsic"] {
+    display: grid;
+    width: max-content;
+    display: inline-block;
+    
+    width: max-content;
+    height: max-content;
+    .box-layout {
+        
+      }
+    padding: 50px;
+    border: 100px solid;
+    border-color: black;
+} */
+
+/* div.images p {
+    font-size: 30px;
+    width: max-content;
+    height: max-content;
+    
+}
+
+div.images img {
+
+    height: 500px;
+    padding: 20px;
+    border: 1px solid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr min-content;
+} */
+
+/* .images{
+
+    display: inline-block;
+} */
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 80px;
+  text-align: center;
+}
+
+.title:hover {
+  color: black;
+  text-decoration: solid;
+}
+
+p {
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 5rem;
+  position: relative;
+}
+
+.container:hover > img {
+  transform: scale(1.02);
+}
+
+.container:hover > p {
+  opacity: 0;
+}
+
+.container img {
+  height: 200px;
+  width: 200px;
+}
+
+.container p {
+  font-size: 30px;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  z-index: -1;
+}
+.column.img_txt {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.column {
+  margin: 20px;
+  padding: 20px;
+}
+
+.column:hover > img {
+  transform: scale(1.75);
+  cursor: pointer;
+}
+
+.img_txt {
+  height: 100px;
+}
+.img_txt:hover > p {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.man .pant {
+  background-color: antiquewhite;
+}
+.man .shirt {
+  background-color: cadetblue;
+}
+
+.woman .saree {
+  background-color: cornsilk;
+}
+.woman .necklace {
+  background-color: darksalmon;
+}
+
+.cat .food {
+  background-color: rgb(150, 141, 212);
+}
+
+.cat .dress {
+  background-color: rgb(228, 215, 140);
+}
+
+.homeDecoration {
+  background-color: darkseagreen;
+}
