@@ -1,28 +1,3 @@
-// const express = require("express");
-// // const mongoose = require("mongoose");
-// const cors = require("cors");
-// const userTasksRouter = require("./router/user router/userTasksRouter");
-// const adminTaskManagement = require("./router/admin router/adminTaskManagement");
-// const app = express();
-// app.use(express.json());
-// app.use(cors());
-
-// // require("dotenv").config({ path: "./../dependency/.env" });
-// // server_port = process.env.SERVER_PORT;
-// // database_connection = process.env.DATABASE_CONNECTION_URL;
-
-// // mongoose
-// //   .connect(database_connection, {
-// //     useNewUrlParser: true,
-// //     useUnifiedTopology: true,
-// //   })
-// //   .then(() => console.log("DATABASE CONNECTION SUCCESSFUL"))
-// //   .catch((err) => console.log(err));
-
-
-// app.listen(6000, () => {
-//   console.log(`SERVER PORT RUNNING AT 6000`);
-// });
 
 
 const express = require('express');
@@ -49,8 +24,8 @@ const db = mysql.createPool({
 
 app.get("/bookList",(req,res)=>{
 
-  const sqlInsert = "SELECT * FROM LIBRARY "
-  db.query(sqlInsert,(err,result)=>{
+  const sqlRetrieve = "SELECT * FROM LIBRARY "
+  db.query(sqlRetrieve,(err,result)=>{
     console.log(result)
     res.send(result)
 
